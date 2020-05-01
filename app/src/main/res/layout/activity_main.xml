@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textMsg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/sis_de_cadastro"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/text_msgSis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="@string/msg_bem_vindo"
+        android:textSize="18sp"
+        android:layout_below="@+id/textMsg1"/>
+
+    <Button
+        android:id="@+id/btcadastrar_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastrar_usu_rio"
+        android:layout_below="@+id/text_msgSis"
+        style="?android:borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/bt_listar_usuarios_cadastrados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/listar_usu_rios_cadastrados"
+        android:layout_below="@+id/btcadastrar_usuario"
+        style="?android:borderlessButtonStyle"/>
+
+</RelativeLayout>

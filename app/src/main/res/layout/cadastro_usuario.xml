@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/text_cabecalho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/msg_cad_usur"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_cabecalho"
+        android:paddingTop="10dp"
+        android:text="@string/msg_preencha"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnome"
+        android:paddingTop="15dp"
+        android:text="@string/nome"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/ednome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textnome"
+        android:inputType="text"
+        android:autofillHints="@string/type_nome"
+        android:labelFor="@+id/ednome"/>
+
+    <requestFocus />
+
+    <TextView
+        android:id="@+id/textendereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ednome"
+        android:paddingTop="10dp"
+        android:text="@string/endere_o"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edendereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:autofillHints="@string/type_adress"
+        android:layout_below="@id/textendereco"
+        android:labelFor="@+id/edendereco"/>
+
+    <TextView
+        android:id="@+id/texttelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edendereco"
+        android:paddingTop="10dp"
+        android:text="@string/telefone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edtelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texttelefone"
+        android:inputType="phone"
+        android:autofillHints="@string/type_tel"
+        android:labelFor="@+id/edtelefone"/>
+
+    <LinearLayout
+        android:id="@+id/layout_botoes_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="255dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btcadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cad"
+            style="?android:borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/btcancelar_cadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            style="?android:borderlessButtonStyle"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

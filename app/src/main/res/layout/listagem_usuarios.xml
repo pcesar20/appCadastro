@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_cabecalhoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/listagem_de_usu_rios"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_cabecalhoList"
+        android:layout_alignParentEnd="true"
+        android:text="@string/reg_count"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txt_listnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtstatus"
+        android:text="@string/list_nome"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_listnome"
+        android:text="@string/array_nome"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fb7600" />
+
+    <TextView
+        android:id="@+id/edt_endlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnome"
+        android:paddingTop="15dp"
+        android:text="@string/endere_o"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txt_endereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_endlist"
+        android:paddingTop="5dp"
+        android:text="@string/list_endereco"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fb7600" />
+
+    <TextView
+        android:id="@+id/edt_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_endereco"
+        android:paddingTop="15dp"
+        android:text="@string/telefone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txt_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_tel"
+        android:paddingTop="5dp"
+        android:text="@string/array_telefone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fb7600" />
+
+    <LinearLayout
+        android:id="@+id/layout_botoes_luc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_telefone"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btanterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anterior"
+            style="?android:borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/btproximo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pr_ximo"
+            style="?android:borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_botao_fechar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@id/layout_botoes_luc">
+
+        <Button
+            android:id="@+id/btfechar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fechar"
+            style="?android:borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
